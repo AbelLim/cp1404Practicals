@@ -9,14 +9,18 @@ def main():
     row = get_row()
     lottery_tickets = list()
 
-    print("{} , {}".format(COLUMN, row))
-
     # Generate a number of rows equal to the number defined by the user.
     x = 0
     while x < row:
         lottery_tickets.append(generate_row(COLUMN))
         x = x + 1
-    print(lottery_tickets)
+
+    # Output values in list.
+    for lottery_ticket in lottery_tickets:
+        lottery_ticket_output = ""
+        for number in lottery_ticket:
+            lottery_ticket_output = "{}{:>2} ".format(lottery_ticket_output, str(number))
+        print(lottery_ticket_output)
 
 
 # Request user input for the number of rows.
