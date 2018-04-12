@@ -7,6 +7,7 @@ COLOR_CODES = {"AliceBlue": "#f0f8ff", "BlanchedAlmond": "#ffebcd", "BlueViolet"
 
 
 def main():
+
     user_input = input("Please input a color name: ")
 
     if user_input in COLOR_CODES:
