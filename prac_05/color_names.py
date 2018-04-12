@@ -1,7 +1,9 @@
-"""Take in name of color from user and output the hexadecimal code for the color,"""
+"""Take in name of color from user and output the hexadecimal code for the color."""
 
 # Define dictionary of COLOR_CODES as a constant.
-COLOR_CODES = {"AliceBlue": "#0F0F88F"}
+COLOR_CODES = {"AliceBlue": "#f0f8ff", "BlanchedAlmond": "#ffebcd", "BlueViolet": "#8a2be2", "CadetBlue": "#5f9ea0",
+               "CornflowerBlue": "#6495ed", "DarkGoldenrod": "	#b8860b", "DarkGreen": "#006400", "DarkKhaki": "#bdb76b",
+               "DarkOrange": "#ff8c00", "DarkOrchid": "#9932cc"}
 
 
 def main():
