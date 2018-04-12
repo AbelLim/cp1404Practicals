@@ -16,7 +16,14 @@ def main():
         else:
             return
 
-    print(word_occurrences)
+    # Convert dictionary to list
+    word_occurrences_keys = list(word_occurrences.keys())
+    # Sort list using default order
+    word_occurrences_keys.sort()
+
+    # Print dictionary using sorted list
+    for word_key in word_occurrences_keys:
+        print("{:{}} : {}".format(word_key, len(max(word_occurrences_keys, key=len)), word_occurrences[word_key]))
 
 
 main()
