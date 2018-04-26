@@ -23,6 +23,7 @@ class MileToKm(App):
         except ValueError:
             result = increment
         self.root.ids.input_box.text = str(result)
+        self.handle_conversion(result)
 
     def handle_conversion(self, value):
         try:
