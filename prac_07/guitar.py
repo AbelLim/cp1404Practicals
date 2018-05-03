@@ -14,7 +14,7 @@ class Guitar:
 
     def __str__(self):
         """Define identifying string of Guitar"""
-        return "{}({}):${:.2f}".format(self.name, self.year, self.cost)
+        return "{}({}) : ${:.2f}".format(self.name, self.year, self.cost)
 
     def get_age(self):
         age = now.year - self.year
