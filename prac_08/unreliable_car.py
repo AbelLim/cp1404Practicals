@@ -1,5 +1,5 @@
 """
-Subclass of car. Has an additional value "reliability" which represents the chance of the car to drive.
+Subclass of car. Has an additional attribute "reliability" which represents the chance of the car to drive.
 """
 
 from prac_08.car import Car
