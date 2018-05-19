@@ -14,6 +14,7 @@ def main():
             try:
                 os.mkdir(os.path.splitext(filename)[1][1:])
             except FileExistsError:
+                pass
             os.rename(filename, '{}/{}'.format(os.path.splitext(filename)[1][1:], filename))
 
 
